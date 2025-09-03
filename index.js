@@ -2,7 +2,7 @@ const express = require('express');
 const axios = require('axios');
 
 const app = express();
-const PORT = process.env.PORT; // <- sem fallback
+const PORT = process.env.PORT;
 
 app.get('/boats', async (req, res) => {
   try {
